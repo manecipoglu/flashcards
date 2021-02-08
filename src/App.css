@@ -1,38 +1,117 @@
-.App {
+body {
+  max-width: 1200px;
+  margin: auto;
+  background-image: url("https://images.unsplash.com/photo-1552359129-456ccf2ffd52?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80");
+}
+
+h1, h2, div {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+td, th {
+  border: 1px solid black;
+  padding: 10px;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+th {
+  font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+table {
+  border-collapse: collapse;
+  padding: 10px;
+  margin: auto;
+  overflow: hidden;
+  table-layout: fixed;
+  width: 900px;
+}
+
+button {
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.buttonMainPage{
+  color: black;
+  font-size: 16px;
+  padding: 10px 16px;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  background-color: gray;
+}
+
+.buttonMainPage:hover{
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: white;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.flipCard {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.nextButton {
+  background-color: #6c94a1;
+  font-size: 20px;
+  color: white;
+}
+
+.switchButton {
+  font-size: 20px;
+}
+
+.frontCard {
+  background-color: khaki;
+  font-size: 20px;
+  height: 50px;
+}
+
+.backCard {
+  background-color: rgb(171, 202, 163);
+  font-size: 20px;
+  height: 50px;
+}
+
+.fa {
+  cursor: pointer;
+  margin: 10px;
+}
+
+#add {
+  position: relative;
+  /* Adjust these values accordingly */
+  top: 12px;
+  left: 15px;
+}
+
+span {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
+
+input[type=checkbox] {
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(2);
+  padding: 10px;
 }
